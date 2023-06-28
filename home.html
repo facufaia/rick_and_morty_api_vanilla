@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/a9c333dba5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+    <title>Rick & Morty WIKI</title>
+</head>
+<body>
+    <div id="modal"></div>
+    <header class="header">
+        <h2 class="header__h2">Rick & Morty<span class="header__span"> Wiki</span></h2>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__current">Characters</li>
+                <li class="header__li"><a class = "none" href="/episodes/episodes.html">Episodes</a></li>
+                <li class="header__li"><a class = "none" href="/locations/locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__h1">Characters</h1>
+        <input id="selNameCharacters" tipe="search" placeholder="Rick Sanchez" class="search">
+        <div class="content">
+            <section class="filterCon">
+                <h2 class="filterCon__h2">Filters</h2>
+                <select id="selStatCharacters" class="filterCon__filter">
+                    <option value="" selected>Status</option>
+                    <option value="alive">Alive</option>
+                    <option value="dead">Dead</option>
+                    <option value="unknown">Unknow</option>
+                </select>
+                <select id="selSpecCharacters" class="filterCon__filter">
+                    <option value="" selected>Species</option>
+                    <option value="human">Human</option>
+                    <option value="alien">Alien</option>
+                    <option value="human">Humanoid</option>
+                    <option value="poopybutthole">Poopybutthole</option>
+                    <option value="mythological">Mythological</option>
+                    <option value="unknown">Unknown</option>
+                    <option value="animal">Animal</option>
+                    <option value="disease">Disease</option>
+                    <option value="robot">Robot</option>
+                    <option value="cronenberg">Cronenberg</option>
+                </select>
+                <select id="selGenCharacters" class="filterCon__filter">
+                    <option value="" selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="genderless">Genderless</option>
+                    <option value="unknown">Unknow</option>
+                </select>
+            </section>
+            <div id="conCharacters"></div>
+        </div>
+        <div id="conPage"></div>
+    </main>
+    <footer id="footer">
+        <p>Copyright © 2022. <a href="#" class="copyhref">@facufaia</a></p>
+        <p>All Rights Reserved</p>
+    </footer> 
+</body>
+</html>
