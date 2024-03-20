@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap" rel="stylesheet">
-    <script defer src="https://kit.fontawesome.com/a9c333dba5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js" ></script>
-    <title>Rick & Morty WIKI</title>
-</head>
-<body>
-    <header class="header">
-        <h2 class="header__h2">Rick & Morty<span class="header__span"> Wiki</span></h2>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"><a class = "none" href="/home.html">Characters</a></li>
-                <li class="header__current">Episodes</li>
-                <li class="header__li"><a class = "none" href="/locations/locations.html">Location</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main__title"></div>
-        <div class="content">
-            <section class="filterCon">
-                <h2 class="filterCon__h2">Pick Episode</h2>
-                <select id="selLoc" class="filterCon__filter">
-                    <option selected id="c137">Status</option>
-                </select>
-            </section>
-            <div id="conCharacters"></div>
-        </div>
-        <div id="conPage"></div>
-    </main>
-    <footer id="footer">
-        <p>Copyright © 2022. <a href="#" class="copyhref">@facufaia</a></p>
-        <p>All Rights Reserved</p>
-    </footer> 
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			defer
+			src="https://kit.fontawesome.com/a9c333dba5.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="/normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+		<title>Rick & Morty WIKI</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://rickandmortyapi.com/favicon-32x32.png"
+		/>
+	</head>
+	<body class="body_background">
+		<header class="header">
+			<h2 class="header__h2">
+				Rick & Morty<span class="header__span"> Wiki</span>
+			</h2>
+			<nav class="header__nav">
+				<ul class="header__ul">
+					<li class="header__li">
+						<a class="none" href="/home.html">Characters</a>
+					</li>
+					<li class="header__current">Episodes</li>
+					<li class="header__li">
+						<a class="none" href="/locations/locations.html">Location</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<div class="main__title animate-fade-1"></div>
+			<div class="content">
+				<section class="filterCon">
+					<h2 class="filterCon__h2 animate-fade-1">Pick Episode</h2>
+					<div
+						class="relative flex flex-row-reverse w-[100%] flex-wrap group justify-between items-center animate-fade-1_2"
+					>
+						<select id="selLoc" class="filterCon__filter">
+							<option selected id="c137">Status</option>
+						</select>
+						<svg
+							class="absolute scale-75 group-hover:scale-[100%] transition duration-300 ease-in-out pointer"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							id="down-arrow"
+						>
+							<path
+								d="M22.782 13.8 17 19.582 11.218 13.8a1 1 0 0 0-1.414 1.414L16.29 21.7a.992.992 0 0 0 .71.292.997.997 0 0 0 .71-.292l6.486-6.486a1 1 0 0 0-1.414-1.414z"
+							></path>
+						</svg>
+					</div>
+				</section>
+				<div id="conCharacters" class="animate-fade-1"></div>
+			</div>
+			<div id="conPage"></div>
+		</main>
+	</body>
 </html>
