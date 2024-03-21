@@ -68,6 +68,9 @@
 	padding: 0 1vw;
 	border: 1px solid rgba(13, 110, 253, 0.7);
 	border-radius: 8px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-box-shadow: 0 0 5px -1.5px #000000;
 	-moz-box-shadow: 0 0 5px -1.5px #000000;
 	box-shadow: 0 0 5px -1.5px #000000;
@@ -76,9 +79,16 @@
 	transition-timing-function: ease;
 }
 .search:hover {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-box-shadow: 0 0 8px -1.5px #000000;
 	-moz-box-shadow: 0 0 8px -1.5px #000000;
 	box-shadow: 0 0 8px -1.5px #000000;
+}
+.search:focus {
+	outline-width: 0cap;
+	border: 1px solid rgba(13, 110, 253, 0.7);
 }
 .content {
 	display: flex;
